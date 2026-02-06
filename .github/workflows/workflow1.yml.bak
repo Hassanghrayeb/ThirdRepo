@@ -39,4 +39,6 @@ jobs:
             -
                 name: Build and push
                 uses: docker/build-push-action@v6                
-              
+                with:
+                  push: true
+                  tags: hghrayeb96/third-app:1.0.0

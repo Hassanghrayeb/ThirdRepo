@@ -20,10 +20,10 @@ jobs:
                     node-version: '18'
             -
                 name: install dependencies
-                script: npm install 
+                run: npm install 
             -
                 name: build project
-                script: npm test && npm build -- --output-path=dist 
+                run: npm test && npm build -- --output-path=dist 
             -
                 name: login to dockerhub
                 uses: docker/login-action@v3
